@@ -34,6 +34,7 @@ public final class ServerUtil {
 
     public static SslContext buildSslContext() throws CertificateException, SSLException {
         if (!SSL) {
+            //
             return null;
         }
         SelfSignedCertificate ssc = new SelfSignedCertificate();
